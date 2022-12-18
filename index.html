@@ -2,6 +2,13 @@
 <html>
     <head>
         <title>About me</title>
+        <link rel="stylesheet" href="css/index.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -15,68 +22,83 @@
                 </div>
              </nav>
           </header>
-          <main>
-            <section>
-                <div>
-                    <img src="image.jpg" alt="Hero Image">
+        <div id="page-wrapper">
+            <div id="about-container">
+                <main>
+                    <div id="about-background"></div>  <!-- Empty container for the future BG image -->
+                    <div id="about-wrapper"> 
+                        <section>
+                            <div id="my-photo">
+                                <img src="img/my-photo.png" alt="My Photo" width="100%">
+                            </div>
+                        </section>
+                        
+                        <section id="about-intro" >
+                            <h5>Hey! I'm Daria :)</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        </section>
+
+                        <section id="skills">
+                            <h5>Skills</h5>
+                            <ul></ul>
+                        </section>
+                    </div>
+                </main>
+            </div>
+
+            <div id="contact-container">
+                <div id="contact-wrapper">
+                    <section>
+                        <div>
+                            <h2>Want to get in touch? Feel free to reach out through <a href="https://www.linkedin.com/feed/">Linkedin</a> or <a href="mailto:dtolkachova@protonmail.com">email</a>.</h2>
+                        </div>
+                        <div id="social-container">
+
+                            <div>
+                                <a href="mailto:dtolkachova@protonmail.com"><img src="img/email-icon.svg" alt="Email Icon" class="social-icon"></a>
+                            </div>
+                            <div>
+                                <a href="https://github.com/dashi-ki"><img src="img/github-mark1.svg" alt="GitHub Icon" class="social-icon"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/feed/"></a><img src="img/linkedIn-icon.svg" alt="LinkedIn Icon" class="social-icon"></a>
+                            </div>
+                        </div>
+                     </section>
+    
+                     <section id="leave-message">
+                        <div id="divider"></div>
+                        <h5>Leave a Message</h5>
+                        <div id="form-wrapper">
+                            <form name="leave_message">
+                                <label for="name">Name:</label><br>
+                                <input type="text" name="name" required="true"><br>
+                
+                                <label for="email">Email:</label><br>
+                                <input type="text" name="email" required="true"><br>
+                
+                                <label for="message">Message:</label><br>
+                                <textarea name="message" required="true"> </textarea><br>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                     </section>
+    
+                     <section id="messages">
+                        <div id="divider"></div>
+                        <h5>Messages:</h5>
+                        <ul></ul>
+                     </section>
                 </div>
-            </section>
-            
-            <section>
-                <h3>Hey there!</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-            </section>
-          </main>
-
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul></ul>
-        </section>
-        <section>
-            <div>
-                <h2>Want to get in touch? Feel free to reach out through <a href="https://www.linkedin.com/feed/">Linkedin</a> or <a href="mailto:dtolkachova@protonmail.com">email</a>.</h2>
                 
             </div>
-            <div>
-                <div>
-                    <a href="mailto:dtolkachova@protonmail.com"><img src="email-icon.jpg" alt="Email Icon"></a>
-                </div>
-                <div>
-                    <a href="https://github.com/dashi-ki"><img src="github-icon.jpg" alt="GitHub Icon"></a>
-                </div>
-                <div>
-                    <a href="https://www.linkedin.com/feed/"></a><img src="logo.jpg" alt="LinkedIn Icon"></a>
-                </div>
+
+            <div id="contactfooter-container">
+                <footer></footer>
             </div>
-         </section>
-         
-         <section>
-            <h2>Leave a Message</h2>
-            <form name="leave_message">
-                <label for="name">Name:</label><br>
-                <input type="text" name="name" required="true"><br>
-
-                <label for="email">Email:</label><br>
-                <input type="text" name="email" required="true"><br>
-
-                <label for="message">Message:</label><br>
-                <textarea name="message" required="true"> </textarea><br>
-                <button type="submit">Submit</button>
-            </form>
-         </section>
-
-         <section id="messages">
-            <h2>Messages:</h2>
-            <ul></ul>
-         </section>
-
-         <footer></footer>
-
-         <script src="js/index.js"></script>
+        </div>
+        <script src="js/index.js"></script>
     </body>
 </html>
 

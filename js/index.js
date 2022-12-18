@@ -3,7 +3,7 @@ const thisYear = today.getFullYear(); // Retrieve the current year from today's 
 const footer = document.querySelector('footer'); // Select <footer> tag
 const copyright = document.createElement('p'); // Create <p>
 
-copyright.innerHTML = `Daria Tolkachova ${thisYear}` // Add name and year into <p>
+copyright.innerHTML = `&copy; Daria Tolkachova ${thisYear}` // Add name and year into <p>
 footer.appendChild(copyright); // Add <p> with the text into <footer>
 
 const skills = ['HTML', 'CSS', 'JS']; // Create array of skills
