@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #fdf7f5;
+    margin: 0;
+    padding: 0;
+}
+
+a:link, a:visited { 
+    color: #222;
+    text-decoration: underline;
+    cursor: auto;
+  }
+
+  a:hover, a:active {
+    color: #4954c0;
+  }
+
+h1, h2, h3 {
+    color: #222;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+p, ul, h5, label, input, textarea, button, footer {
+    color: #222;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+label {
+    text-transform: uppercase; 
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+#page-wrapper{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+#about-container, #contact-container {
+    padding: 0 5%;
+}
+
+#about-wrapper, #contact-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+
+#my-photo {
+    width: 100%;
+    max-width: 450px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+#contact-container {
+    min-height: 100vh;
+    padding: 100px 5% 100px 5%;
+}
+
+#form-wrapper, input, textarea {
+    width:100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: none;
+}
+
+button {
+    width: 250px;
+    max-width: 250px;
+    height: 50px;
+    background-color: #4954c0;
+    color: white;
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+}
+
+
+
+#social-container {
+    width: 250px;
+    margin: 0 auto;
+    padding: 30px 0;
+    
+}
+
+.social-icon {
+    max-width: 50px;
+}
+
+#divider {
+    width: 100px;
+    height: 3px;
+    background-color: #d87d63;
+    margin: 30px auto;
+}
+
+#leave-message {
+    padding: 60px 0;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+}
