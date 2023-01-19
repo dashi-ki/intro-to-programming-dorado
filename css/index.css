@@ -131,7 +131,7 @@ label {
     padding: 0 2%;
     margin: 0 auto;
 }
-#about, #skills, #messages{
+#about, #skills, #messages, #projects{
     margin-top: 30px;
 }
 #contact, #message{
