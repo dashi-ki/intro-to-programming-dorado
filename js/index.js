@@ -6,7 +6,7 @@ const copyright = document.createElement('p'); // Create <p>
 copyright.innerHTML = `&copy; Daria Tolkachova ${thisYear}` // Add name and year into <p>
 footer.appendChild(copyright); // Add <p> with the text into <footer>
 
-const skills = ['HTML', 'CSS', 'JS']; // Create array of skills
+const skills = ['HTML', 'CSS', 'JavaScript']; // Create array of skills
 const skillsSection = document.querySelector('#skills'); // Select #skills section
 const skillsList = skillsSection.querySelector('ul'); // Select <ul> element
 
@@ -32,13 +32,10 @@ messageFrom.addEventListener('submit', (event) => {
     const messageList = messageSection.querySelector('ul');
 
     const newMessage = document.createElement('li');
-    // newMessage.innerHTML(
-    //     `<a href='mailto:${email.value}'>${name.value}</a> wrote <span>${message.value} </span>`
-    // );
 
     newMessage.insertAdjacentHTML(
         'afterbegin',
-        `<a href="mailto:${email.value}">${name.value}</a> wrote <span>${message.value} </span>`
+        `<a href="mailto:${email.value}">${name.value}</a> wrote: <br> <span>${message.value} </span>`
     )
 
     const removeButton = document.createElement('button');
