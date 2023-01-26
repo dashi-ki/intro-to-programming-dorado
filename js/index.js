@@ -55,5 +55,28 @@ messageFrom.addEventListener('submit', (event) => {
     
 });
 
+// Projects XML HTTP request
+var projectsList = [];
+const githubRequest = new XMLHttpRequest();
+githubRequest.addEventListener('load', function() {
+    projectsList = JSON.parse(githubRequest.response);
+    renderHTMLfor(projectsList);
+});
+githubRequest.open('GET', 'https://api.github.com/users/dashi-ki/repos');
+githubRequest.send();
 
 
+function renderHTMLfor(projects) {
+    const projectSection = document.getElementById('projects');
+    const projectList = projectSection.querySelector('ul');
+
+    for (project of projectsList) {
+        const projectItem = document.createElement('li');
+        const projectLink = document.createElement('a');
+        projectLink.textContent = project.name;
+        projectLink.href = project.html_url;
+        projectLink.target = '_blank'
+        projectItem.appendChild(projectLink);
+        projectList.appendChild(projectItem);
+    }
+}
