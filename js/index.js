@@ -32,20 +32,20 @@ messageFrom.addEventListener('submit', (event) => {
     const messageList = messageSection.querySelector('ul');
 
     const newMessage = document.createElement('li');
-
+    newMessage.classList.add('message_item')
     newMessage.insertAdjacentHTML(
         'afterbegin',
-        `<a href="mailto:${email.value}">${name.value}</a> wrote: <br> <span>${message.value} </span>`
+        `<div><span class="message-sender"><a href="mailto:${email.value}">${name.value}</a></span> wrote: <br> <span>${message.value} </span> </div>`
     )
 
     const removeButton = document.createElement('button');
     removeButton.innerText = 'remove';
     removeButton.type = 'button';
+    removeButton.classList.add('remove-button')
     removeButton.addEventListener('click', (event) => {
         const entry = removeButton.parentNode;
         entry.remove();
     })
-    
     
     newMessage.appendChild(removeButton);
     messageList.append(newMessage);
@@ -54,6 +54,8 @@ messageFrom.addEventListener('submit', (event) => {
 
     
 });
+
+
 
 
 // Projects XML HTTP request
@@ -90,7 +92,9 @@ function renderHTMLfrom(data) {
     for (project of data) {
         const projectBullet = document.createElement('li');
         const projectUrl = document.createElement('a');
+        projectUrl.href = project.html_url;
         projectUrl.textContent = project.name;
+        projectUrl.target = '_blank';
         projectBullet.appendChild(projectUrl);
         projectList.appendChild(projectBullet);
     }
