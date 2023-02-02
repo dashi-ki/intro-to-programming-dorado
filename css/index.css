@@ -131,19 +131,21 @@ label {
     padding: 0 2%;
     margin: 0 auto;
 }
-#about, #skills, #messages, #projects{
+#about, #skills, #projects{
     margin-top: 30px;
 }
-#contact, #message{
+#contact, #message, #messages {
     margin-top: 100px;
 }
+
 #contact {
     margin-bottom: 50px;
 }
-.skills-list{
+.skills-list {
     display: flex;
     flex-direction: row;
     justify-content:center;
+    margin-bottom: 2.5em;
 }
 .skills-list li {
     color: #d87d63;
@@ -151,11 +153,35 @@ label {
     padding: 0.2em 0.4em;
     margin: 0 0.5em;
     border: 2px solid #d87d63;
+    border-radius: 3em;
+}
+
+.projects-list li {
+    background-color: #FAE5DE;
+    font-weight: 400;
+    padding: 0.5em 0.4em;
+    margin-bottom: 0.5em;
     border-radius: 0.1em;
 }
-#contact-wrapper a {
+
+.messages-list li {
+    margin: 1em;
+}
+.message_item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.message-sender {
+font-weight: 500;
+}
+
+#contact-wrapper a, .projects-list a {
     text-decoration: underline;
 }
+
 #social-container {
     width: 200px;
     margin: 0 auto;
@@ -194,12 +220,20 @@ input, textarea {
     font-weight: 500;
     text-transform: uppercase; 
 }
-/* #divider {
-    width: 100px;
-    height: 3px;
+
+.remove-button {
+    min-width: 100px;
+    max-width: 100px;
+    height: 40px;
     background-color: #d87d63;
-    margin: 30px auto;
-} */
+    color: white;
+    border: none;
+    margin-left: 40px;
+    text-transform: uppercase; 
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
 #leave-message {
     padding: 60px 0;
 }
